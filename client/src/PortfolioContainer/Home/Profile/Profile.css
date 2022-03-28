@@ -1,0 +1,166 @@
+.profile-container {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+}
+
+.profile-parent {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  color: aliceblue;
+}
+
+.profile-details {
+  font-size: 24px;
+  font-family: "Poppins SemiBold";
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.primary-text {
+  color: var(--white);
+}
+
+.highlighted-text {
+  font-size: 28px;
+  color: var(--dark-orange);
+}
+
+.profile-role-tagline {
+  font-size: 22px;
+  /* margin: 5px 0 0 0; */
+  font-family: "Poopins Light";
+}
+
+.profile-options {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 0 0 0 28px; */
+}
+
+.profile-options .highlighted-btn:hover {
+  /* margin: 0 0 0 28px; */
+  background-color: cornsilk;
+  color: #111;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 var(--white);
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+}
+
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../../assets/Home/suman-dhakal-linkedin-pp.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no repeat;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.09);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.colz .colz-icons i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+
+.colz .colz-icons i:hover {
+  transform: scale(1.5);
+  margin: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-picture {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .profile-picture {
+    width: 380px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-parent {
+    flex-direction: column-reverse;
+  }
+
+  .profile-picture {
+    width: 380px;
+    height: 380px;
+  }
+
+  .profile-role-tagline {
+    font-size: 20px;
+  }
+
+  .profile-details-role h1 {
+    font-size: 30px;
+  }
+  .profile-options button {
+    font-size: 16px;
+  }
+  .colz .colz-icons i {
+    transform: scale(1.5);
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .profile-options {
+    flex-direction: column;
+  }
+
+  .profile-options > button:first-child {
+    margin-bottom: 10px;
+  }
+  .colz .colz-icons i {
+    transform: scale(1.2);
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .profile-picture {
+    width: 280px;
+    height: 280px;
+  }
+
+  .profile-details-role h1 {
+    font-size: 30px;
+  }
+  .profile-role-tagline {
+    font-size: 18px;
+  }
+}

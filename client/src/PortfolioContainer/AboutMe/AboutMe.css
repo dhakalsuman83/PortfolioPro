@@ -1,0 +1,135 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.about-me-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+
+.about-me-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0 20px -2px #1f2235;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.about-me-profile {
+  width: 49%;
+  background-image: url("../../assets/AboutMe/suman-dhakal-linkedin-pp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  border-radius: 30px;
+}
+
+.about-me-details {
+  width: 48%;
+  text-align: justify;
+  padding: 30px;
+}
+
+.about-me-description {
+  font-size: 14px;
+}
+
+.about-me-highlights {
+  margin: 100px 0;
+}
+
+.highlighted-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: #ff5823;
+  border-radius: 50%;
+}
+
+.about-me-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1170px) {
+  .about-me-options {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me-options a {
+    width: 100%;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+  .about-me-options button:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .about-me-parent {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .about-me-highlights {
+    margin: 50px 0;
+  }
+
+  .about-me-options {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .about-me-options {
+    width: 90%;
+  }
+  .about-me-description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about-me-highlights {
+    margin: 20px 0;
+  }
+  .about-me-options {
+    width: 100%;
+  }
+}

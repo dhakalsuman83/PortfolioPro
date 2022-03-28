@@ -1,0 +1,66 @@
+.testimonial-section {
+  padding: 15px;
+}
+
+.testi-item {
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 50px 50px 0;
+}
+
+.testi-item p {
+  font-size: 16px;
+  font-family: "Poppin SemiBold";
+}
+
+.stars {
+  display: flex;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-info > h5 {
+  margin-top: 5px;
+}
+
+/* //background shape */
+
+.testimonial-background {
+  color: black;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* min-height: 500px; */
+  background: url("../../assets/Home/bg.jpg");
+}
+
+/* shape css */
+.custom-shape-divider-bottom-1647572968 {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1647572968 svg {
+  /* position: relative; */
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1647572968 .shape-fill {
+  fill: #ffffff;
+}
