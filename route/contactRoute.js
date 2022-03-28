@@ -4,11 +4,7 @@ const config = require("../config");
 
 router.post("/contact", (req, res) => {
   let data = req.body;
-  if (
-    data.name.length === 0 ||
-    data.email.length === 0 ||
-    data.message.length === 0
-  ) {
+  if (!data?.name?.length || !data?.email?.length || !data?.message?.length) {
     return res.json({ msg: "Please fill all the fields" });
   }
   let smtpTransporter = nodeMailer.createTransport({
